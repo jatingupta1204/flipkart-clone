@@ -1,12 +1,12 @@
 import React from "react";
-import facebook from "../../assets/facebook.svg"
-import twitter from "../../assets/twitter.svg"
-import youtube from "../../assets/youtube.svg"
-import seller from "../../assets/seller.svg"
-import advertise from "../../assets/advertise.svg"
-import giftCard from "../../assets/giftCard.svg"
-import helpCenter from "../../assets/helpCentre.svg"
-import paymentMethod from "../../assets/paymentMethod.svg"
+import facebook from "../../assets/Footer/facebook.svg"
+import twitter from "../../assets/Footer/twitter.svg"
+import youtube from "../../assets/Footer/youtube.svg"
+import seller from "../../assets/Footer/seller.svg"
+import advertise from "../../assets/Footer/advertise.svg"
+import giftCard from "../../assets/Footer/giftCard.svg"
+import helpCenter from "../../assets/Footer/helpCentre.svg"
+import paymentMethod from "../../assets/Footer/paymentMethod.svg"
 
 function Footer() {
     return (
@@ -126,7 +126,7 @@ function Footer() {
             </div>
             <div className="min-h-10"></div>
             <div className="px-[93px] py-7 border-t-2">
-                <div className="flex gap-[93px]">
+                <div className="flex gap-[89px]">
                     <div className="flex justify-start">
                         <img src={seller} className="h-4 w-4"/>
                         <a href="#" className="text-white text-xs ml-2">Become a Seller</a>
