@@ -1,16 +1,16 @@
 import React from "react";
 import '../../Custom.css'
-import logo from "../../assets/logo.svg"
-import search from "../../assets/search.svg"
-import profile from "../../assets/profile.svg"
+import logo from "../../assets/Header/logo.svg"
+import search from "../../assets/Header/search.svg"
+import profile from "../../assets/Header/profile.svg"
+import cart from "../../assets/Header/cart.svg"
+import sellerHeader from "../../assets/Header/sellerHeader.svg"
+import headerDots from "../../assets/Header/headerDots.svg"
 import downarrow from "../../assets/downarrow.svg"
-import cart from "../../assets/cart.svg"
-import sellerHeader from "../../assets/sellerHeader.svg"
-import headerDots from "../../assets/headerDots.svg"
 
 function Header() {
     return (
-        <header className="bg-white w-full flex flex-row sticky top-0">
+        <header className="bg-white w-full flex flex-row sticky top-0 z-50">
                     <div>
                         <img src={logo} className="my-3 ml-7 mr-9" />
                     </div>
