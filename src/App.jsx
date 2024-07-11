@@ -5,7 +5,6 @@ import authService from './appwrite/auth'
 import { login, logout } from './store/authSlice'
 import { Footer, Header} from './components'
 import { Outlet } from 'react-router-dom'
-import Main from './pages/main'
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -28,8 +27,7 @@ function App() {
       <div className='w-full block'>
         <Header />
         <main>
-          <Main />
-          {/* <Outlet /> */}
+          <Outlet />
         </main>
         <Footer />
       </div>
