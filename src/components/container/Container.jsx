@@ -1,14 +1,14 @@
 import React from "react";
 import '../../Custom.css'
-import Grocery from "../../assets/Grocery.png"
-import Mobiles from "../../assets/Mobiles.png"
-import Fashion from "../../assets/Fashion.png"
-import Electronics from "../../assets/Electronics.png"
-import homeFurniture from "../../assets/homeFurniture.jpg"
-import Appliances from "../../assets/Appliances.jpg"
-import Travel from "../../assets/travel.png"
-import beautyToys from "../../assets/beautyToys.png"
-import twoWhellers from "../../assets/twoWheelers.png"
+import Grocery from "../../assets/Container/Grocery.png"
+import Mobiles from "../../assets/Container/Mobiles.png"
+import Fashion from "../../assets/Container/Fashion.png"
+import Electronics from "../../assets/Container/Electronics.png"
+import homeFurniture from "../../assets/Container/homeFurniture.jpg"
+import Appliances from "../../assets/Container/Appliances.jpg"
+import Travel from "../../assets/Container/travel.png"
+import beautyToys from "../../assets/Container/beautyToys.png"
+import twoWhellers from "../../assets/Container/twoWheelers.png"
 import downarrow from "../../assets/downarrow.svg"
 
 
