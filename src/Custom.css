@@ -1,3 +1,11 @@
 .button-hover:hover img{
     @apply filter invert brightness-0;
 }
+
+.hover-blue:hover .down-arrow {
+    filter: invert(31%) sepia(90%) saturate(4061%) hue-rotate(184deg) brightness(97%) contrast(107%);
+}
+
+.right-btn img{
+    @apply filter invert brightness-0;
+}
