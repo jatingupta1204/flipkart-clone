@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import {useNavigate} from "react-router-dom"
 import '../../Custom.css'
 import logo from "../../assets/Header/logo.svg"
 import search from "../../assets/Header/search.svg"
@@ -9,18 +10,26 @@ import headerDots from "../../assets/Header/headerDots.svg"
 import downarrow from "../../assets/downarrow.svg"
 
 function Header() {
+    const [searchQuery, setSearchQuery] = useState("");
+    const navigate = useNavigate()
+
+    const handleSearchSubmit = (event) => {
+        event.preventDefault();
+        navigate(`/search?q=${searchQuery}`)
+    }
+
     return (
         <header className="bg-white w-full flex flex-row sticky top-0 z-50">
                     <div>
                         <img src={logo} className="my-3 ml-7 mr-9" />
                     </div>
                     <div className="basis-1/2">
-                        <form className="max-w-md flex">
+                        <form className="max-w-md flex" onSubmit={handleSearchSubmit}>
                             <div className="relative py-[14px]">
                                 <div className="absolute inset-y-2 start-0 flex items-center ps-3 pointer-events-none">
                                     <img src={search} />
                                 </div>
-                                <input type="search" className="block w-[748px] p-2 ps-10 text-[17px] text-gray-900 rounded-lg bg-[#f0f5ff] outline-0" placeholder="Search for Products, Brands and More" required />
+                                <input type="search" className="block w-[748px] p-2 ps-10 text-[17px] text-gray-900 rounded-lg bg-[#f0f5ff] outline-0" placeholder="Search for Products, Brands and More" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} required />
                             </div>
                         </form>
                     </div>
